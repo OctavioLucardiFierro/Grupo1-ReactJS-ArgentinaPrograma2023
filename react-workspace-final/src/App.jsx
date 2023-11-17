@@ -25,7 +25,7 @@ function App() {
               <button onClick={handleSetForm}>Confitmar</button>
               <button onClick={handleSetForm}>Cancelar</button>
           </form>
-        : <h1>Hola</h1>
+        : <div></div>
       }
 
     </>
