@@ -2,23 +2,16 @@ import React from 'react'
 import { useState } from 'react'
 import './nota.css'
 
-const Nota  = ({nombre}) =>{
-    const [cumplido, setCumplido] = useState(false)
+const Nota  = ({task, deleteTask}) =>{
+    const {title, description, createdAt, id} = task
 
-    const handleSetCumplido = () =>{
-        setCumplido(!cumplido)
-    }
-    nombre = nombre  ? nombre : 'Error 404'
     return (
         <div className='nota'>
-            <input type="checkbox" onClick={handleSetCumplido}/>
-            {
-                cumplido
-                ? <strike>{nombre}</strike>
-                : <span>{nombre}</span>
-            }
-            <button>eliminar</button>
-            
+            <h2>{title}</h2>
+            <p>{description}</p>
+            <span>{createdAt}</span>
+            <button onClick={() => deleteTask(task.id)}> Terminar</button>
+            <hr />
         </div>
     )
 }
