@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CiSquarePlus } from "react-icons/ci";
+import { FaPlusCircle } from "react-icons/fa";
 import './Form.css'
 import { v4 as uuidv4 } from 'uuid';
 
@@ -30,19 +30,20 @@ const Form  = ({addTask}) =>{
     
     return (
         <div>
-
-            <button onClick={openModal}>Nueva tarea <CiSquarePlus /></button>
+            <div className='btnNewTask'>
+                <button onClick={openModal}><FaPlusCircle /></button>
+            </div>     
             {isOpen && (
                 <div className='modal-background' >
                     <div className='modal'>
                         <h2>Crea una nueva tarea</h2>
                         <form onSubmit={handleSubmitTask}>
                             <div className="input-container">
-                                <label htmlFor="title">Ingrese un titulo:</label>
+                                <label htmlFor="title">Ingrese un título:</label>
                                 <input type="text" id='title' name='title' placeholder='Titulo ejemplo' />
                             </div>
                             <div className="input-container">
-                                <label htmlFor="description">Ingrese una descripcion:</label>
+                                <label htmlFor="description">Ingrese una descripción:</label>
                                 <textarea name="description" id="description" ></textarea>
                             </div>
                             <div className='controls-form'>

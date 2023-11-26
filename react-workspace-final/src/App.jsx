@@ -38,7 +38,7 @@ function App() {
     <>
       <div className="mainContainer">
         <h1>TO DO LIST</h1>
-        <input type="text" placeholder="Buscar una tarea" onChange={handleFilterChange} value={searchString}/>
+        <input className="buscarTarea" type="text" placeholder="Buscar una tarea" onChange={handleFilterChange} value={searchString}/>
 
         <Form addTask={addTask} />
         <div className="noteContainer">

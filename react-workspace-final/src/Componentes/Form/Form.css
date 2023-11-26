@@ -1,7 +1,7 @@
 .modal-background{
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.44);
+    background-color: rgba(20, 157, 164, 0.9);
     position: absolute;
     z-index: 3;
     top: 0;
@@ -11,10 +11,16 @@
     align-items: center;
 }
 
+
 .modal{
-    background-color: white;
+    background-color: rgb(244, 246, 234);
     padding: 15px;
     border-radius: 15px;
+    box-shadow: 24px 23px 29px -9px rgba(0,0,0,0.75);
+    color: #024E53;
+}
+.modal h2{
+    font-size: 35px;
 }
 
 .modal>form{
@@ -28,13 +34,62 @@
     display: flex;
     gap: 10px;
     flex-direction: column;
+    
+}
+.modal>form>.input-container>input{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(0,212,255,1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,212,255,1), inset 0 0 10px rgba(0,212,255,1);
+    font-size: 15px;
+    padding: 10px;
+    
 }
 
 .modal>form>.input-container>textarea{
     height: 100px;
+    resize: none;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(0,212,255,1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,212,255,1), inset 0 0 10px rgba(0,212,255,1);
+    padding: 10px;
 }
 
 .controls-form{
     display: flex;
     justify-content: space-between;
+}
+
+.btnNewTask{
+    display: flex;
+    justify-content: center;
+    
+}
+.btnNewTask button{
+    background-color: #ffffff00;
+    color: #024E53;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.controls-form button{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #024E53;
+
+}
+
+.controls-form :hover{
+    background-color: white;
+    color: #024E53;
+    font-weight: bold;
+    border-color: #fff;
+    cursor: pointer;
 }

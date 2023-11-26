@@ -19,18 +19,21 @@ const Nota  = ({task, deleteTask}) =>{
             <div className='todoIzq'>
                 {
                     terminado
-                    ?   <div className='containerBotones'><h2><IoMdCheckmarkCircleOutline />  <strike>{title}</strike></h2>
-                        <button className='deleteButton' onClick={() => deleteTask(task.id)}> <MdDeleteForever /></button></div>
+                    ? <div className='containerBotones'><h2><IoMdCheckmarkCircleOutline color='#8BEA6A'/>  <strike>{title}</strike></h2>
+                        <button className='deleteButton' onClick={() => deleteTask(task.id)}> <MdDeleteForever /></button>
+                    </div>
 
-                    : <div className='containerBotones'><h2>{title}</h2> 
-                    <button className='deleteButton' onClick={() => deleteTask(task.id)}> <MdDeleteForever /></button></div>
+                    : <div className='containerBotones'>
+                        <h2>{title}</h2> 
+                        <button className='deleteButton' onClick={() => deleteTask(task.id)}> <MdDeleteForever /></button>
+                    </div>
                 }
                 
 
                 {
                     terminado
-                    ? <div><p><strike>{description}</strike></p></div>
-                    : <div><p>{description}</p></div>
+                    ? <p><strike>{description}</strike></p>
+                    : <p>{description}</p>
                 }
                 
                 <div className='TaskButton'>
