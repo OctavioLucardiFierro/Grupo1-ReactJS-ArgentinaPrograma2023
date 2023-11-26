@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 *{
     margin: 0 ;
     padding: 0 ;
     box-sizing: border-box;
+    font-family: 'Nova Square', sans-serif;
 }
 
 .nota{
@@ -9,7 +11,10 @@
     color: #024E53;   
     border-bottom: 3px solid #024E53;
     border-radius: 25px;
-    
+    max-width: 800px;
+    align-items: center;
+    min-width: 500px;
+    box-shadow: 20px 19px 40px 0px rgba(0, 0, 0, 0.447);
 }
 .todoIzq{
     display: flex;
@@ -17,6 +22,7 @@
     text-align: left;
     margin: 50px;
     padding-top: 30px;
+
 }
 .containerBotones{
     padding-top: 20px;
@@ -47,11 +53,11 @@ p{
     display: flex;
     justify-content: space-between;
 }
-.TaskButton span{
-    margin-top: 30px;
+.dateTask{
+    margin-top: 35px;
 }
 
-#buttonTerminado :hover{
+.btn :hover{
     background-color: white;
     color: #024E53;
     font-weight: bold;

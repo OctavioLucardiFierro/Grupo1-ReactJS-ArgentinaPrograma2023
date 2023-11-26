@@ -29,18 +29,22 @@ const Nota  = ({task, deleteTask}) =>{
 
                 {
                     terminado
-                    ? <p><strike>{description}</strike></p> 
-                    : <p>{description}</p>
+                    ? <div><p><strike>{description}</strike></p></div>
+                    : <div><p>{description}</p></div>
                 }
                 
                 <div className='TaskButton'>
+                    <div className='dateTask'>
                     <span>{createdAt}</span>
+                    </div>
+                    <div className='btn'>
                     {
                         terminado
                         ?<button  onClick={handleTerminado}>No lo termine</button>
                         : <button  onClick={handleTerminado}>Tarea hecha</button>
-                    
                     }
+                    </div>
+                   
                      
                 </div>
                     
