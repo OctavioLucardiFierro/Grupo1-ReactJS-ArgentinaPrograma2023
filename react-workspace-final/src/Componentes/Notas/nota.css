@@ -1,0 +1,65 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+.nota{
+    background-color: #8BB7DF;
+    color: #024E53;   
+    border-bottom: 3px solid #024E53;
+    border-radius: 25px;
+    
+}
+.todoIzq{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 50px;
+    padding-top: 30px;
+}
+.containerBotones{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    padding-top: 20px;
+}
+.deleteButton{
+    color:red;
+    font-size: 25px;
+    background-color: #024d5300;
+    border: none;
+    cursor: pointer;
+}
+.TaskButton button{
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #024E53;
+
+}
+.TaskButton{
+    display: flex;
+    justify-content: space-between;
+}
+.TaskButton span{
+    margin-top: 30px;
+}
+
+#buttonTerminado :hover{
+    background-color: white;
+    color: #024E53;
+    font-weight: bold;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
