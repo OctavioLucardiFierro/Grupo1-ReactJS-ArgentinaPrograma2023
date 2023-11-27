@@ -12,7 +12,8 @@
     border-bottom: 3px solid #024E53;
     border-radius: 25px;
     box-shadow: 20px 19px 40px 0px rgba(0, 0, 0, 0.447);
-   
+    width: 100%;
+    margin: 0 auto;
 }
 .todoIzq{
     display: flex;
@@ -33,6 +34,9 @@ p{
     word-break: break-word;
 }
 
+h2{
+    word-break: break-word;
+}
 
 .deleteButton{
     color:red;
@@ -70,5 +74,37 @@ p{
 
 
 
+@media screen and (max-width: 600px) {
+    .nota{
+        width: 95%;
+        flex-direction: column;
+    }
+    .todoIzq{
+        margin: 5px 10px;
+    }
+    button{
+        margin: 0 auto;
+    }
+    .containerBotones {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nota p {
+        font-size: 10px;
+    }
+}
 
+@media screen and (max-width:850px) {
+    
+    .btn {
+        text-align: center;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .btn> button {
+        margin: 0 auto;
+    }
+
+}
 

@@ -40,11 +40,11 @@ const Form  = ({addTask}) =>{
                         <form onSubmit={handleSubmitTask}>
                             <div className="input-container">
                                 <label htmlFor="title">Ingrese un título:</label>
-                                <input type="text" id='title' name='title' placeholder='Titulo ejemplo' />
+                                <input required type="text" id='title' name='title' placeholder='Titulo ejemplo' />
                             </div>
                             <div className="input-container">
                                 <label htmlFor="description">Ingrese una descripción:</label>
-                                <textarea name="description" id="description" ></textarea>
+                                <textarea required name="description" id="description" ></textarea>
                             </div>
                             <div className='controls-form'>
                                 <button role='button' type='button' onClick={closeModal}>Cancelar</button>

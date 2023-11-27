@@ -18,6 +18,7 @@
     border-radius: 15px;
     box-shadow: 24px 23px 29px -9px rgba(0,0,0,0.75);
     color: #024E53;
+    width: 65%;
 }
 .modal h2{
     font-size: 35px;
@@ -27,7 +28,7 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
-    width: 50vw;
+    width: 100%;
 }
 
 .modal>form>.input-container{
@@ -92,4 +93,23 @@
     font-weight: bold;
     border-color: #fff;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .modal {
+        width: 90%;
+    }
+    
+    .controls-form
+    {
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .controls-form button{
+        margin: 0 auto;
+        width: 70%;
+        align-items: center;
+    }
+    
 }
