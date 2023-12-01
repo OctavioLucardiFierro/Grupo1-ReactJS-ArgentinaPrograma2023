@@ -2,15 +2,12 @@ import { useEffect, useState } from "react";
 import React from "react";
 import "./App.css";
 import { Nota, Form, NotaList } from "./Componentes";
+import { useLocalStorage } from './useLocalStorage'
+
 
 function App() {
-  /*const [formActivo, setForm] = useState(false)
 
-  const handleSetForm = () => {
-    setForm(!formActivo)
-  }*/
-
-  const [tasks, setTasks] = useState([]); //Array con las tareas
+  const [tasks, setTasks] = useLocalStorage('tasks',[]); //Array con las tareas
   const [currentTasks, setCurrentTask] = useState([]); //Array con las tareas buscadas
   const [searchString, setSearchString] = useState(""); //String para buscar
   const addTask = (task) => {

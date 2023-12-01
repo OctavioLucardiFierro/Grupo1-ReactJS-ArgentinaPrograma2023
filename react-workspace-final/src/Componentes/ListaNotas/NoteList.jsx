@@ -2,6 +2,8 @@ import React from 'react'
 import Nota from '../Notas/Nota'
 import { FaRegSadCry } from "react-icons/fa";
 
+
+
 const NotaList  = ({tasks, deleteTask, searchString, currentTasks}) =>{
     return (
         <div className='containerFilter'>
